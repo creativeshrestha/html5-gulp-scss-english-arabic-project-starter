@@ -1,14 +1,6 @@
 # Start project using php, SCSS, JS, English and arabic
 ## Getting Started
-
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+I have created this kickstarter project to innitialize project for saving time.
 
 ### Installing
 
