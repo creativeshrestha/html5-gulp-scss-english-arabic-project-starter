@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^choosenissan.ae [NC]
+RewriteRule ^(.*)$ http://www.choosenissan.ae/$1 [L,R=301]
+
+
+  RewriteEngine on
+    RewriteRule  ^$ %{REQUEST_URI}en [L,R=301]
+    RewriteCond  %{REQUEST_FILENAME} !-f
+    RewriteCond  %{REQUEST_FILENAME} !-d
+    RewriteCond  %{HTTP_HOST} ^www\.[^.]+\.host\.com$
+    RewriteRule  ^(.+) %{HTTP_HOST}$1 [C]
+    RewriteRule  ^www\.(.*)(|/)$ en/index.php?query=$1 [QSA,L]

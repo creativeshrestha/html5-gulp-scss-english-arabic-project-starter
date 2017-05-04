@@ -1,0 +1,212 @@
+/* footer-container */
+footer {
+
+	direction: ltr;
+
+	.footer-top{
+		padding: 3% 0;
+		lost-utility:clearfix;
+		background: #000000;
+		direction: ltr;
+		color: white;
+
+		.sitemaps div{
+			lost-column: 1/4;
+
+			@media(min-width: 769px) and (max-width: 1024px){
+				lost-column: 4/12;
+			}
+
+			@media(max-width: 768px){
+				lost-column: 1 0 0;
+				border-bottom:  1px solid gray;
+				padding: 10px 0;
+				margin: 0;
+				cursor: pointer;
+
+				&:hover{
+					//box-shadow: 0px 10px 5px red, 0px -10px 5px red;
+				}
+
+				&:last-child{
+					border: 0;
+				}
+			}
+
+			ul{
+				text-align: left;
+				//height: auto !important;
+
+				li{
+					
+					a{
+						color: #c1c1c1;
+						font-size:.8571428571em;
+						font-family: arial, serif;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			h2{
+				margin-bottom: 5px;
+				font-family:NissanBrand-Bold, serif;
+				color: #515151;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: white;
+			}
+		}
+
+		.socials{
+			//lost-column: 8/12;
+			direction: ltr;
+
+			@media(min-width: 769px) and (max-width: 1024px){
+				lost-column: 3/12;
+			}
+
+			@media(max-width: 768px){
+				lost-column: 1 0 0;
+				margin: 20px 0;
+			}
+
+			ul {
+				margin: 5px 0 0 0;
+				padding: 0;
+				text-align: left;
+
+				@media (max-width: 768px){
+					text-align: left
+
+				}
+
+				li {
+					display: inline-block;
+					margin-right: 10px;
+					padding: 0;
+
+					a {
+
+						display: inline-block;
+						text-indent: 999999px;
+						width: 28px;
+						height: 28px;
+						text-align: left;
+						overflow: hidden;
+
+						&.facebook {
+							background: url("img/icons/facebook.png") no-repeat top left;
+
+							&:hover{
+								background: url("img/icons/facebook-hover.png") no-repeat top left;
+							}
+						}
+
+						&.twitter {
+							background: url("img/icons/twitter.png") no-repeat top left;
+
+							&:hover{
+								background: url("img/icons/twitter-hover.png") no-repeat top left;
+							}
+						}
+
+						&.youtube {
+							background: url("img/icons/youtube.png") no-repeat top left;
+
+							&:hover{
+								background: url("img/icons/youtube-hover.png") no-repeat top left;
+							}
+						}
+
+						&.instagram {
+							background: url("img/icons/instagram.png") no-repeat top left;
+
+							&:hover{
+								background: url("img/icons/instagram-hover.png") no-repeat top left;
+							}
+						}
+					}
+				}
+			}
+
+			h2{
+				margin-bottom: 30px;
+				font-family:NissanBrand-Light, serif;
+				color: #515151;
+				font-size: 30px;
+				direction: ltr;
+			}
+		}
+
+	}
+
+	.section-image-icon{
+		padding: 20px 0;
+		lost-utility:clearfix;
+		direction: ltr;
+
+		.image{
+			lost-column: 1/2;
+			text-align: left;
+
+
+			a{
+				display: block;
+			}
+
+			&:nth-child(2n){
+				text-align: right;
+
+				@media(max-width: 768px){
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.copyrights {
+		text-align: left;
+		padding: 15px 0;
+		color: white;
+		background: #000000;
+		border-top:1px solid gray;
+		direction: ltr;
+
+		p{
+			color: white;
+			lost-column: 1/2 0 0;
+			text-align: left;
+			margin: 0;
+			font-size: 14px;
+			direction: ltr;
+
+			@media(max-width: 768px){
+				lost-column: 1 0 0;
+				text-align: center;
+
+			}
+
+			&:first-child{
+				font-weight: bold;
+				font-family:NissanBrand-Bold, serif;
+			}
+		}
+
+		a{
+			color: white;
+			margin-left: 80px;
+			font-weight: normal;
+			font-family:NissanBrand-Light, serif;
+			direction: ltr;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+}
